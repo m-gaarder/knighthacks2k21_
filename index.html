@@ -17,23 +17,24 @@
 		<div class = "center" id = "img_location">
 		</div>
 	</div>
-	<script src="site.settings.js"></script>
-	<script>
-		function addImage()
-		{
-			var img = new Image();
-			img.src = "ag4if0bqrty71.png"; 			
-			img.height = 500;
-			img.width = 500;
+	<script src="site.settings.js">	</script>
 
-			var dv = document.getElementById('img_location');
-			while (dv.hasChildNodes())
-			{
-				dv.removeChild(dv.lastChild);
-			}
-			
-			dv.appendChild(img);
+	<script>
+	function addImage()
+	{
+		var img = new Image();
+		img.src = "ag4if0bqrty71.png"; 			
+		img.height = 500;
+		img.width = 500;
+		var dv = document.getElementById('img_location');
+		while (dv.hasChildNodes())
+		{
+			dv.removeChild(dv.lastChild);
 		}
+			
+		dv.appendChild(img);
+	}
 	</script>
+	
 </body>
 </html>
