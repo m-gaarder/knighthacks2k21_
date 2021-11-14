@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Hello</title>
+	<title>Pawfect</title>
 	<link rel = "stylesheet" type = "text/css" href = "{{ url_for('static',filename='styles/style.css') }}">
 	<script type = "text/javascript" src = "{{ url_for('static', filename='file.js') }}"></script>
 </head>
@@ -11,19 +11,22 @@
 	<nav id="navBar">
 		<header class="bighead">
 			<div class="headcontainer">
-				<div class = "titletext"> Pawfect - Your favourite Pet Image generator!</div>
+				<div class = "titletext"> Pawfect - A fun pet related content generator!</div>
 			</div>
 		</header>
 	</nav>
 	<div class="container">
 		<div class = "button_location">
-			<button>Generate</button>
+			<button onclick = "addContent()" id = "btn">
+			Generate
+			</button>
 		</div>
-		
+		<div class = "center" id = "content_location">
+		</div>
 	</div>
 	<div>
 		<div class = "infobutton_location">
-			<button  id="mpopupLink">info facts</button>
+			<button  id="mpopupLink">info</button>
 		</div>
 	</div>
 	

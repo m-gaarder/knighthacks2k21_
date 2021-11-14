@@ -37,7 +37,7 @@ button {
 .button_location {
 	margin: 0;
 	position: absolute;
-	top: 90%;
+	top: 95%;
 	left: 50%;
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
@@ -45,8 +45,8 @@ button {
 .infobutton_location{
 	margin: 0;
 	position: absolute;
-	top: 15%;
-	left: 85%;
+	top: 96%;
+	left: 95%;
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);	
 }
@@ -165,7 +165,7 @@ button:active {
 .center {
 	margin: 0;
 	position: absolute;
-	top: 50%;
+	top: 55%;
 	left: 50%;
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);

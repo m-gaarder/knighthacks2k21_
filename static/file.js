@@ -20,14 +20,13 @@ async function addContent()
 		var video = document.createElement('video');
 		
 		video.src = media["Content_URL"];
-		video.width = 500;
-		video.height = 500;
+		video.width = 600;
+		video.height = 600;
 		video.autoplay = true;
 		video.loop = true;
 		
 		// Add video to div "content_location"
-		// (this section might not be applicable if going with a popup)
-		var dv = document.getElementById('myModal');
+		var dv = document.getElementById('content_location');
 		// Remove existing video or image
 		while (dv.hasChildNodes())
 		{
@@ -41,12 +40,11 @@ async function addContent()
 	{
 		var img = new Image();
 		img.src = media["Content_URL"];
-		img.height = 500;
-		img.width = 500;
+		img.height = 600;
+		img.width = 600;
 		
 		// Add image to div "content_location"
-		// (this section might not be applicable if going with a popup)
-		var dv = document.getElementById('myModal');
+		var dv = document.getElementById('content_location');
 		// Remove existing video or image
 		while (dv.hasChildNodes())
 		{
