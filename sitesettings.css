@@ -1,9 +1,4 @@
 body {
-	/*
-	background-image: url('background/backgroundimg.png');
-	background-repeat: no-repeat;
-    background-size: cover;
-	*/
     background-image: url('https://wallpapercave.com/wp/wp2763918.gif');
     background-size: cover;
     
@@ -15,6 +10,17 @@ body {
 	
 }
 
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/*generate icon highlight animation */
 button {
 	background-color:transparent;
     position: relative;
@@ -48,6 +54,7 @@ button:active {
   transform: translateY(4px);
 }
 
+/*closing icon & animation */
 .close {
   position: absolute;
   top: 15px;
@@ -57,6 +64,13 @@ button:active {
   font-weight: bold;
   transition: 0.3s;
 }
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 @media (min-width:700px){
 	header.bighead.titletext{
