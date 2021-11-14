@@ -17,32 +17,40 @@
 	</nav>
 	<div class="container">
 		<div class = "button_location">
-			<button onclick = "addImage()">
-				Generate
-			</button>
+			<button src="catmemestorage/1.png" id="img2">Generate</button>
 		</div>
-		<div class = "center" id = "img_location">
-		</div>
+		<div class = "center modal" id = "img_location"></div>
 	</div>
 	<script src="site.settings.js">	</script>
+	
 
-	<script>
-	function addImage()
-	{
-		var img = new Image();
-		img.src = "catmemestorage/1.png"; 			
-		img.height = 500;
-		img.width = 500;
-		var dv = document.getElementById('img_location');
-		while (dv.hasChildNodes())
-		{
-			dv.removeChild(dv.lastChild);
-		}
-			
-		dv.appendChild(img);
-	}
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+	  <span class="close">&times;</span>
+	  <img class="modal-content" id="img01">
+	  <div id="caption"></div>
+	</div>
 
-	</script>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("img2");
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
 	
 </body>
 </html>
