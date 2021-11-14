@@ -48,6 +48,16 @@ button:active {
   transform: translateY(4px);
 }
 
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
 @media (min-width:700px){
 	header.bighead.titletext{
 		padding-top:200px;
@@ -62,13 +72,6 @@ button:active {
 		margin-bottom:25px;
 		color:#ffffff;
 		font = FreeMono, monospace;;
-	}
-	header.bighead .intro-text .intro-heading{
-		font-size:75px;
-		font-weight:700;
-		line-height:75px;
-		margin-bottom:50px;
-		font-family:Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
 	}
 }
 
