@@ -1,29 +1,3 @@
-// get the mPopup
-var mpopup = document.getElementById('mpopupBox');
-
-// get the link that opens the mPopup
-var mpLink = document.getElementById("mpopupLink");
-
-// get the close action element
-var close = document.getElementsByClassName("close")[0];
-
-// open the mPopup once the link is clicked
-mpLink.onclick = function() {
-    mpopup.style.display = "block";
-}
-
-// close the mPopup once close element is clicked
-close.onclick = function() {
-    mpopup.style.display = "none";
-}
-
-// close the mPopup when user clicks outside of the box
-window.onclick = function(event) {
-    if (event.target == mpopup) {
-        mpopup.style.display = "none";
-    }
-}
-
 // Fetches URL
 function getContent()
 {
@@ -53,7 +27,7 @@ async function addContent()
 		
 		// Add video to div "content_location"
 		// (this section might not be applicable if going with a popup)
-		var dv = document.getElementById('content_location');
+		var dv = document.getElementById('myModal');
 		// Remove existing video or image
 		while (dv.hasChildNodes())
 		{
@@ -72,7 +46,7 @@ async function addContent()
 		
 		// Add image to div "content_location"
 		// (this section might not be applicable if going with a popup)
-		var dv = document.getElementById('content_location');
+		var dv = document.getElementById('myModal');
 		// Remove existing video or image
 		while (dv.hasChildNodes())
 		{
