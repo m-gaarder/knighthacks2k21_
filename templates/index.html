@@ -17,40 +17,52 @@
 	</nav>
 	<div class="container">
 		<div class = "button_location">
-			<button  id="img2">Generate</button>
+			<button>Generate</button>
 		</div>
-		<div class = "center modal" id = "img_location"></div>
+		
 	</div>
-	<script src="site.settings.js">	</script>
+	<div>
+		<div class = "infobutton_location">
+			<button  id="mpopupLink">info facts</button>
+		</div>
+	</div>
 	
-
 	<!-- The Modal -->
 	<div id="myModal" class="modal">
-	  <span class="close">&times;</span>
-	  <img src="letsgo.png" class="modal-content" id="img01">
-	  <div id="caption"></div>
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<div class="modal-body">
+			</div>
+		</div>
+		
 	</div>
-
-<script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("img2");
-var modalImg = document.getElementById("img01");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-</script>
 	
+	<script>
+		// get the mPopup
+		var mpopup = document.getElementById('myModal');
+
+		// get the link that opens the mPopup
+		var mpLink = document.getElementById("mpopupLink");
+
+		// get the close action element
+		var close = document.getElementsByClassName("close")[0];
+
+		// open the mPopup once the link is clicked
+		mpLink.onclick = function() {
+			mpopup.style.display = "block";
+		}
+
+		// close the mPopup once close element is clicked
+		close.onclick = function() {
+			mpopup.style.display = "none";
+		}
+
+		// close the mPopup when user clicks outside of the box
+		window.onclick = function(event) {
+			if (event.target == mpopup) {
+				mpopup.style.display = "none";
+			}
+		}	
+	</script>
 </body>
 </html>
